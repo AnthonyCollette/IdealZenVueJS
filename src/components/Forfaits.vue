@@ -40,7 +40,7 @@
 					Vous souhaitez prendre un rendez-vous ? Vous avez besoin d'un
 					accompagnement spécifique ou vous avez des difficultés financières ?
 				</p>
-				<a class="btn" href="contact.html">Contactez-moi !</a>
+				<router-link class="btn" to="/contact">Contactez-moi !</router-link>
 			</div>
 		</div>
 	</section>

@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Accompagnements from '../views/Accompagnements.vue'
 import ReikiUsui from '../views/ReikiUsui.vue'
@@ -15,7 +15,7 @@ const routes = [
 		component: Home,
 	},
 	{
-		path: '/soin-énergétique-reiki',
+		path: '/soin-energetique-reiki',
 		name: 'Accompagnements',
 		component: Accompagnements,
 	},
@@ -45,15 +45,18 @@ const routes = [
 		component: ContactPage,
 	},
 	{
-		path: '/mentions-légales',
+		path: '/mentions-legales',
 		name: 'Mentions',
 		component: Mentions,
 	},
 ]
 
 const router = createRouter({
-	history: createWebHistory(),
+	history: createWebHashHistory(),
 	routes,
+	scrollBehavior(to, from, savedPosition) {
+		return { left: 0, top: 0 }
+	},
 })
 
 export default router

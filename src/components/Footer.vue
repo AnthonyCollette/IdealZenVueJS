@@ -13,7 +13,7 @@
 				</ul>
 			</div>
 			<div class="col-lg-4 mentions-wrapper">
-				<router-link to="/mentions-légales">Mentions légales</router-link>
+				<router-link to="/mentions-legales">Mentions légales</router-link>
 			</div>
 			<div class="col-lg-4 social-media-footer">
 				<a href="http://instagram.com/idealzen" target="_blank"

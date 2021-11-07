@@ -96,7 +96,7 @@ export default {
 			transform: scale(0.6);
 			z-index: 2;
 			transform-origin: bottom right;
-			animation: 2s ease-in-out leaf1;
+			animation: leaf1 2s ease-in-out;
 			@include min($sm) {
 				left: -25%;
 				transform: none;
@@ -110,7 +110,7 @@ export default {
 			bottom: 31%;
 			z-index: 3;
 			transform-origin: bottom right;
-			animation: 2s ease-in-out leaf2;
+			animation: leaf2 2s ease-in-out;
 			transform: scale(0.6);
 			@include min($sm) {
 				transform: none;
@@ -125,7 +125,7 @@ export default {
 			left: 31%;
 			bottom: 30%;
 			z-index: 2;
-			animation: 2s ease-in-out leaf3;
+			animation: leaf3 2s ease-in-out;
 			transform: scale(0.6);
 			@include min($sm) {
 				transform: none;
@@ -141,7 +141,7 @@ export default {
 			bottom: 31%;
 			z-index: 3;
 			transform-origin: bottom left;
-			animation: 2s ease-in-out leaf4;
+			animation: leaf4 2s ease-in-out;
 			transform: scale(0.6);
 			@include min($sm) {
 				transform: none;
@@ -156,7 +156,7 @@ export default {
 			left: 43%;
 			z-index: 2;
 			transform-origin: bottom left;
-			animation: 2s ease-in-out leaf5;
+			animation: leaf5 2s ease-in-out;
 			transform: scale(0.6);
 			@include min($sm) {
 				transform: none;
@@ -169,7 +169,7 @@ export default {
 		.ellipse {
 			left: -2%;
 			bottom: 30%;
-			animation: 1.5s ease-in-out apparition;
+			animation: apparition 1.5s ease-in-out;
 			transform: scale(0.6);
 			@include min($sm) {
 				transform: none;
@@ -193,7 +193,7 @@ export default {
 			font-size: $font-xl;
 			font-weight: 600;
 			opacity: 0;
-			animation: 1.5s ease-in-out apparition forwards;
+			animation: apparition 1.5s ease-in-out forwards;
 			animation-delay: 1s;
 			@include min($sm) {
 				font-size: $font-xxxl;
@@ -206,7 +206,7 @@ export default {
 			right: 0;
 			width: 170px;
 			margin: 0 auto;
-			animation: 1.5s ease-in-out apparition forwards;
+			animation: apparition 1.5s ease-in-out forwards;
 			animation-delay: 1.5s;
 			opacity: 0;
 			@include min($sm) {
@@ -228,7 +228,7 @@ export default {
 			position: absolute;
 			max-width: 90%;
 			top: 5%;
-			animation: 1.5s ease-in-out apparition forwards;
+			animation: apparition 1.5s ease-in-out forwards;
 			animation-delay: 1s;
 			opacity: 0;
 			@include min($sm) {
@@ -254,7 +254,7 @@ export default {
 			position: absolute;
 			right: 10%;
 			top: 20%;
-			animation: 1.5s ease-in-out apparition forwards;
+			animation: apparition 1.5s ease-in-out forwards;
 			animation-delay: 1.5s;
 			opacity: 0;
 			@include min($sm) {

@@ -11,10 +11,12 @@
 				</p>
 				<p>Retrouvez les dates de formations dans les</p>
 				<div class="silence__formation__text-wrapper--buttons-wrapper">
-					<div class="btn-wrapper"><a class="btn" href="">Acualités</a></div>
+					<div class="btn-wrapper">
+						<a class="btn" href="https://idealzen.wordpress.com/">Acualités</a>
+					</div>
 					<span>ou</span>
 					<div class="btn-wrapper">
-						<a class="btn" href="contact.html">contactez-moi !</a>
+						<router-link class="btn" to="/contact">contactez-moi !</router-link>
 					</div>
 				</div>
 			</div>

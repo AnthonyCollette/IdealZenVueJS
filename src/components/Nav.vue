@@ -1,7 +1,7 @@
 <template>
 	<nav>
 		<div class="container">
-			<router-link class="nav-brand" to="/">
+			<router-link class="nav-brand" to="/" @click="ResetBurger">
 				<img src="../../public/images/logo.svg" alt="Logo Ideal Zen" />
 			</router-link>
 			<div class="nav">
@@ -10,12 +10,12 @@
 					<div class="burger-button--line line2" id="line2"></div>
 					<div class="burger-button--line line3" id="line3"></div>
 				</button>
-				<ul class="nav__items" id="nav__items">
+				<ul class="nav__items" id="nav__items" v-if="NavShow">
 					<li>
-						<router-link to="/"> Accueil </router-link>
+						<router-link to="/" @click="ResetBurger"> Accueil </router-link>
 					</li>
 					<li>
-						<router-link to="/soin-énergétique-reiki">
+						<router-link to="/soin-energetique-reiki" @click="ResetBurger">
 							Accompagnements
 						</router-link>
 					</li>
@@ -26,31 +26,36 @@
 					>
 						Formations
 						<div class="sub-formations" id="sub-formations" v-if="SubNav">
-							<router-link to="/formation-reiki-usui">
+							<router-link to="/formation-reiki-usui" @click="ResetBurger">
 								Formation Reiki Usui
 							</router-link>
-							<router-link to="formation-reiki-kundalini">
+							<router-link to="formation-reiki-kundalini" @click="ResetBurger">
 								Formation Reiki Kundalini
 							</router-link>
-							<router-link to="formation-voie-du-silence">
+							<router-link to="formation-voie-du-silence" @click="ResetBurger">
 								Formation Voie du Silence
 							</router-link>
 						</div>
 					</li>
 					<li>
-						<router-link to="/presentation"> Présentation </router-link>
+						<router-link to="/presentation" @click="ResetBurger">
+							Présentation
+						</router-link>
 					</li>
 					<li>
 						<a
 							href="https://idealzen.wordpress.com"
 							target="_blank"
 							rel="noreferrer"
+							@click="ResetBurger"
 						>
 							Actualités
 						</a>
 					</li>
 					<li>
-						<router-link to="/contact"> Contact </router-link>
+						<router-link to="/contact" @click="ResetBurger">
+							Contact
+						</router-link>
 					</li>
 				</ul>
 			</div>
@@ -64,6 +69,7 @@ export default {
 	data() {
 		return {
 			SubNav: false,
+			NavShow: false,
 		}
 	},
 	methods: {
@@ -71,13 +77,11 @@ export default {
 			this.SubNav = !this.SubNav
 		},
 		ToggleNav() {
-			let navItems = document.getElementById('nav__items')
+			this.NavShow = !this.NavShow
 			let line1 = document.getElementById('line1')
 			let line2 = document.getElementById('line2')
 			let line3 = document.getElementById('line3')
-			navItems.style.display =
-				navItems.style.display === 'flex' ? 'none' : 'flex'
-			if (line2.style.opacity === '0') {
+			if (this.NavShow == false) {
 				line1.style.transform = 'rotate(0deg) translateY(0)'
 				line2.style.opacity = '1'
 				line3.style.transform = 'rotate(0deg) translateY(0px)'
@@ -87,6 +91,21 @@ export default {
 				line3.style.transform = 'rotate(-45deg) translateY(-12px)'
 			}
 		},
+		ResetBurger() {
+			let line1 = document.getElementById('line1')
+			let line2 = document.getElementById('line2')
+			let line3 = document.getElementById('line3')
+			line1.style.transform = 'rotate(0deg) translateY(0)'
+			line2.style.opacity = '1'
+			line3.style.transform = 'rotate(0deg) translateY(0px)'
+		},
+	},
+	created() {
+		if (screen.width >= '1400') {
+			this.NavShow = true
+		} else {
+			this.NavShow = false
+		}
 	},
 }
 </script>
@@ -127,7 +146,6 @@ nav {
 		align-items: flex-end;
 	}
 	#nav__items {
-		display: none;
 		flex-direction: column;
 		align-items: flex-end;
 		position: relative;

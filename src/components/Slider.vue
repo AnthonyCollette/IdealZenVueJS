@@ -1,5 +1,5 @@
 <template>
-	<vueper-slides fixed-height="true">
+	<vueper-slides fixed-height="true" :dragging-distance="40">
 		<vueper-slide
 			v-for="(slide, i) in slides"
 			:key="i"

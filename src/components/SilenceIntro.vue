@@ -88,11 +88,14 @@ export default {
 		h2 {
 			background-color: $color-005;
 			position: relative;
-			padding: 20px 100px;
+			padding: 20px 70px;
 			width: fit-content;
 			width: -moz-fit-content;
 			margin: 80px auto 0;
 			display: block;
+			@include min($sm) {
+				padding: 20px 100px;
+			}
 			@include min($lg) {
 				margin: 50px auto 0;
 			}

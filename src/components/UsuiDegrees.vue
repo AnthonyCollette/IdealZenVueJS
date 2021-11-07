@@ -172,6 +172,9 @@ export default {
 			position: absolute;
 			right: 0;
 			bottom: 100px;
+			padding: 15px 0;
+		}
+		@include min($md) {
 			padding: 15px 140px;
 		}
 		&::before {
