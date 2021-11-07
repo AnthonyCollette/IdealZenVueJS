@@ -1,0 +1,159 @@
+@keyframes leaf1 {
+	0% {
+		transform: rotate(45deg) scale(0.6);
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	100% {
+		transform: rotate(0deg) scale(0.6);
+		opacity: 100%;
+	}
+}
+
+@include min($sm) {
+	@keyframes leaf1 {
+		0% {
+			transform: rotate(45deg);
+			opacity: 0;
+		}
+		10% {
+			opacity: 0;
+		}
+		100% {
+			transform: rotate(0deg);
+			opacity: 100%;
+		}
+	}
+}
+
+@keyframes leaf2 {
+	0% {
+		transform: rotate(20deg) scale(0.6);
+		opacity: 0;
+	}
+	50% {
+		opacity: 100%;
+	}
+	100% {
+		transform: rotate(0deg) scale(0.6);
+		opacity: 100%;
+	}
+}
+@include min($sm) {
+	@keyframes leaf2 {
+		0% {
+			transform: rotate(20deg);
+			opacity: 0;
+		}
+		50% {
+			opacity: 100%;
+		}
+		100% {
+			transform: rotate(0deg);
+			opacity: 100%;
+		}
+	}
+}
+
+@keyframes leaf3 {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 25%;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
+
+@keyframes leaf4 {
+	0% {
+		transform: rotate(-20deg) scale(0.6);
+		opacity: 0;
+	}
+	50% {
+		opacity: 100%;
+	}
+	100% {
+		transform: rotate(0deg) scale(0.6);
+		opacity: 100%;
+	}
+}
+@include min($sm) {
+	@keyframes leaf4 {
+		0% {
+			transform: rotate(-20deg);
+			opacity: 0;
+		}
+		50% {
+			opacity: 100%;
+		}
+		100% {
+			transform: rotate(0deg);
+			opacity: 100%;
+		}
+	}
+}
+
+@keyframes leaf5 {
+	0% {
+		transform: rotate(-20deg) scale(0.6);
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	100% {
+		transform: rotate(0deg) scale(0.6);
+		opacity: 100%;
+	}
+}
+@include min($sm) {
+	@keyframes leaf5 {
+		0% {
+			transform: rotate(-20deg);
+			opacity: 0;
+		}
+		10% {
+			opacity: 0;
+		}
+		100% {
+			transform: rotate(0deg);
+			opacity: 100%;
+		}
+	}
+}
+
+@keyframes apparition {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
+
+@keyframes fromRight {
+	0% {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 100;
+	}
+}
+
+@keyframes fromLeft {
+	0% {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 100;
+	}
+}

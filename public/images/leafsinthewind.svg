@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="410.929" height="258.937" viewBox="0 0 410.929 258.937">
+  <g id="déco_footer_feuille_volante" data-name="déco footer feuille volante" transform="translate(-804.524 -1583.335) rotate(-22)">
+    <g id="Groupe_13" data-name="Groupe 13" transform="translate(360.832 1986.966) rotate(-45)">
+      <path id="Tracé_9" data-name="Tracé 9" d="M15.211,61.334c-.271.518,15.211-13.73,15.211-30.667S15.211,0,15.211,0,0,13.73,0,30.667,15.482,60.816,15.211,61.334Z" transform="translate(68.339 30.674) rotate(120)" fill="#c0ce3c"/>
+      <path id="Tracé_13" data-name="Tracé 13" d="M0,61.334c-.271.518,15.211-13.73,15.211-30.667S0,0,0,0A146.357,146.357,0,0,1,3.237,30.505C3.237,47.442.274,60.816,0,61.334Z" transform="translate(60.736 43.844) rotate(120)" fill="#b1c612"/>
+    </g>
+    <path id="Tracé_22" data-name="Tracé 22" d="M4354.365,3167.615s34.6,10.891,88.411-17.939-7.047-59.335,0-15.77,117.849,19.246,117.849,19.246" transform="translate(-4207.023 -1165.88)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Groupe_15" data-name="Groupe 15" transform="matrix(0.961, -0.276, 0.276, 0.961, 52.478, 1985.766)">
+      <path id="Tracé_9-2" data-name="Tracé 9" d="M15.211,61.334c-.271.518,15.211-13.73,15.211-30.667S15.211,0,15.211,0,0,13.73,0,30.667,15.482,60.816,15.211,61.334Z" transform="translate(68.339 30.674) rotate(120)" fill="#c0ce3c"/>
+      <path id="Tracé_13-2" data-name="Tracé 13" d="M0,61.334c-.271.518,15.211-13.73,15.211-30.667S0,0,0,0A146.357,146.357,0,0,1,3.237,30.505C3.237,47.442.274,60.816,0,61.334Z" transform="translate(60.736 43.844) rotate(120)" fill="#b1c612"/>
+    </g>
+    <g id="Groupe_16" data-name="Groupe 16" transform="translate(467.239 1986.212) rotate(-120)">
+      <path id="Tracé_6" data-name="Tracé 6" d="M15.379.014C15.106-.509,30.759,13.9,30.759,31.021S15.379,62.028,15.379,62.028,0,48.145,0,31.021,15.653.537,15.379.014Z" transform="translate(0.074 0)" fill="#ecf283"/>
+      <path id="Tracé_15" data-name="Tracé 15" d="M15.379.014C15.653-.509,0,13.9,0,31.021S15.379,62.028,15.379,62.028a147.981,147.981,0,0,1-3.27-30.843C12.11,14.06,15.106.537,15.379.014Z" transform="translate(0 0)" fill="#dce25e"/>
+    </g>
+    <g id="petit_trait" data-name="petit trait" transform="translate(492.599 1914.697) rotate(5)">
+      <path id="Tracé_25" data-name="Tracé 25" d="M0,7.68S16.3-4.969,25.077,2.2" transform="translate(1.334 0.912) rotate(10)" fill="none" stroke="#707070" stroke-width="1"/>
+      <path id="Tracé_26" data-name="Tracé 26" d="M0,2.213a15.149,15.149,0,0,1,15.65,0" transform="translate(7.764 0)" fill="none" stroke="#707070" stroke-width="1"/>
+    </g>
+    <g id="trait_vent" data-name="trait vent" transform="translate(138.833 1940.887)">
+      <path id="Tracé_27" data-name="Tracé 27" d="M0,2.213a15.149,15.149,0,0,1,15.65,0" transform="translate(93.52 9.849) rotate(-39)" fill="none" stroke="#707070" stroke-width="1"/>
+      <path id="Tracé_28" data-name="Tracé 28" d="M0,2.213s16.345-4.98,34.024,0" transform="translate(145.539 59.064) rotate(-169)" fill="none" stroke="#707070" stroke-width="1"/>
+      <path id="Tracé_29" data-name="Tracé 29" d="M0,1.423a52.764,52.764,0,0,1,24.254,0" transform="translate(23.809 60.756) rotate(-169)" fill="none" stroke="#707070" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

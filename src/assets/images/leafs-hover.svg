@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="93.143" height="92.737" viewBox="0 0 93.143 92.737">
+  <g id="feuille" transform="translate(-2125.398 -1990.836)">
+    <g id="feuille_foncée" data-name="feuille foncée" transform="translate(2123.538 2060.85) rotate(-45)">
+      <path id="Tracé_9" data-name="Tracé 9" d="M18.554,74.813c-.33.631,18.554-16.748,18.554-37.407S18.554,0,18.554,0,0,16.748,0,37.407,18.884,74.182,18.554,74.813Z" transform="translate(83.359 37.415) rotate(120)" fill="#c0ce3c"/>
+      <path id="Tracé_13" data-name="Tracé 13" d="M0,74.813c-.33.631,18.554-16.748,18.554-37.407S0,0,0,0A178.523,178.523,0,0,1,3.949,37.209C3.949,57.869.335,74.182,0,74.813Z" transform="translate(74.084 53.479) rotate(120)" fill="#b1c612"/>
+    </g>
+    <g id="feuille_claire" data-name="feuille claire" transform="translate(2157.969 2075.164) rotate(-150)">
+      <path id="Tracé_6" data-name="Tracé 6" d="M18.76-.011c-.334-.638,18.76,16.933,18.76,37.822S18.76,75.632,18.76,75.632,0,58.7,0,37.811,19.093.627,18.76-.011Z" transform="translate(0.09 0.028)" fill="#ecf283"/>
+      <path id="Tracé_15" data-name="Tracé 15" d="M18.76.017C19.094-.621,0,16.95,0,37.839S18.76,75.66,18.76,75.66a180.5,180.5,0,0,1-3.988-37.622C14.771,17.15,18.426.655,18.76.017Z" transform="translate(0 0)" fill="#dce25e"/>
+    </g>
+  </g>
+</svg>
