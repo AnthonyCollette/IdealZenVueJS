@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Accompagnements from '../views/Accompagnements.vue'
 import ReikiUsui from '../views/ReikiUsui.vue'
@@ -52,7 +52,7 @@ const routes = [
 ]
 
 const router = createRouter({
-	history: createWebHashHistory(),
+	history: createWebHistory(),
 	routes,
 	scrollBehavior(to, from, savedPosition) {
 		return { left: 0, top: 0 }

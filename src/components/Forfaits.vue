@@ -32,7 +32,7 @@
 				<div class="forfaits__details--unite">
 					<h6>4 BOOSTS ÉNERGÉTIQUES</h6>
 					<p class="details-text">À distance</p>
-					<p class="tarif">100€</p>
+					<p class="tarif">50€</p>
 				</div>
 			</div>
 			<div class="text-link-wrapper">

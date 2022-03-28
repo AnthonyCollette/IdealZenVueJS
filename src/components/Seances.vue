@@ -57,7 +57,7 @@
 					<div class="details-seances__right-column--tarifs">
 						<h5>TARIFS</h5>
 						<p>Harmonisation (1h) : 50 €</p>
-						<p>Boost énergétique (45min) : 30 €</p>
+						<p>Boost énergétique (45min) : 15 €</p>
 						<p>
 							Les soins à distance sont payables d'avance par virement, chèque
 							ou PayPal. Le rendez-vous sera confirmé à réception du paiement.
