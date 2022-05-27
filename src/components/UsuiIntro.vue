@@ -8,14 +8,42 @@
                     <p>Il se transmet et se pratique en dehors de toute religion ou dogme.</p>
                 </div>
                 <div class="usui__intro--text-wrapper">
-                    <p>Le reiki Usui shiki ryoho est une technique énergétique qui consiste à transmettre l'énergie universelle de vie.</p>
-                    <p>J'enseigne le reiki tel que je l'ai reçu en 3 degrés, chaque degré est complet en soi.</p> 
-                    <p class="margin">Les stages se déroulent en présentiel, en groupe (4 à 6 personnes maximum) ou en individuel. Je conseille les groupes plutôt que l'apprentissage individuel. La dynamique qui se met en place est enrichissante pour chacun, tant dans l'apprentissage de la pratique que dans le partage d'expérience.</p> <p>Chaque stage comporte : <ul>
-                        <li>une partie enseignement/pratique,</li>
+                    <p>Le reiki Usui est une technique énergétique qui consiste à transmettre l’énergie
+universelle de vie</p>
+                    <p>J’enseigne le reiki Usui shiki ryoho tel que je l’ai reçu, en 3 degrés. Chaque degré
+est complet en soi et vous serez capable de transmettre l’énergie dès le 1er degré.</p> 
+                    <p class="margin">Les stages se déroulent en groupe de 6 personnes maximum, les initiations sont
+individuelles. Une formation peut être envisagée en individuel même si je conseille
+plutôt les groupes. La dynamique qui se met en place est enrichissante pour chacun,
+tant dans l'apprentissage de la pratique que dans le partage d'expérience.
+</p> <p>Chaque stage comporte : <ul>
+                        <li>une partie théorique,</li>
+                        <li>une partie pratique,</li>
                         <li>une ou plusieurs initiations,</li>
-                        <li>un certificat de formation délivré à la fin du degré,</li>
-                        <li>21 jours d'auto-traitement à l'issue desquels nous échangeons pour faire le point.</li>
+                        <li>un livret de formation,</li>
+                        <li>un certificat de formation délivré à la fin du stage,</li>
+                        <li>21 jours d'auto-traitement à l'issue desquels nous échangeons pour faire le
+point.</li>
                     </ul></p>
+                    <div class="modal" id="modal" v-if="modal" @click="toggleModal">
+                        <div class="modal--content">
+                           <i class="fa-solid fa-xmark" ></i>                          
+                        <h2>Infos utiles</h2>
+                        <ul>
+                            <li><strong>Durée :</strong> 2 jours</li>
+                            <li><strong>Horaires :</strong> 9h-18h
+</li>
+                            <li><strong>Lieu :</strong> Couchey (21)</li>
+                            <li><strong>Tarif :</strong> 200€ le degré</li>
+                            <li>Repas en commun sur le principe
+de l’auberge espagnole</li>
+                            <li>Pas d’hébergement</li>
+                            <li>Un entretien préalable est nécessaire
+pour valider votre inscription.</li>
+                        </ul>
+                        </div>
+                    </div>
+                    <button class="btn" @click="toggleModal">Plus d'infos</button>
                 </div>
                 <img src="../../public/images/leafsinthewind2.svg" alt="Feuilles dans le vent">
             </div>
@@ -24,7 +52,17 @@
 
 <script>
 export default {
-name : 'UsuiIntro'
+name : 'UsuiIntro',
+data() {
+    return {
+        modal: false,
+    }
+},
+methods: {
+    toggleModal() {
+        this.modal = !this.modal
+    }
+},
 }
 </script>
 
@@ -36,6 +74,36 @@ name : 'UsuiIntro'
         }
         .container {
             position: relative;
+            .btn {
+                border: none;
+                cursor: pointer;
+                margin-top: 50px;
+            }
+            .modal {
+                position: fixed;
+                inset: 0 0 0 0;
+                background-color: rgba($color: $color-005, $alpha: 0.6);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index:1000;
+                &--content {
+                    background-color: $color-001;
+                    padding: 50px;
+                    border: 5px solid $color-005;
+                    position: relative;
+                    i {
+                        position: absolute;
+                        right: 20px;
+                        top: 20px;
+                        cursor: pointer;
+                    }
+                    h2 {
+                        margin-bottom: 50px;
+                    }
+
+                }
+            }
             > img {
                 display: none;
                 @include min($md) {
