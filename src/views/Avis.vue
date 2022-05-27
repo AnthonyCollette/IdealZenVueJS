@@ -1,22 +1,28 @@
 <template>
-	<div class="home">
+	<div class="avis">
 		<Nav />
-		<Hero />
+		<Slider />
 		<Footer />
 	</div>
 </template>
 
 <script>
-import Hero from '../components/Hero.vue'
+import Slider from '../components/Slider.vue'
 import Nav from '../components/Nav.vue'
 import Footer from '../components/Footer.vue'
 
 export default {
-	name: 'Home',
+	name: 'Avis',
 	components: {
+		Slider,
 		Nav,
-		Hero,
 		Footer,
 	},
 }
 </script>
+
+<style lang="scss" scoped>
+.avis {
+	background-color: $color-006;
+}
+</style>

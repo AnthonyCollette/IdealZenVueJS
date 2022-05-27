@@ -7,6 +7,7 @@ import VoixDuSilence from '../views/VoixDuSilence.vue'
 import Presentation from '../views/Presentation.vue'
 import ContactPage from '../views/Contact.vue'
 import Mentions from '../views/Mentions.vue'
+import Avis from '../views/Avis.vue'
 
 const routes = [
 	{
@@ -43,6 +44,11 @@ const routes = [
 		path: '/contact',
 		name: 'ContactPage',
 		component: ContactPage,
+	},
+	{
+		path: '/avis',
+		name: 'Avis',
+		component: Avis,
 	},
 	{
 		path: '/mentions-legales',

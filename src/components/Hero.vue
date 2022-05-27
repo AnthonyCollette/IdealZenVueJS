@@ -45,7 +45,7 @@
 					id="ellipse"
 				/>
 				<span class="text-logo">Ideal Zen</span>
-				<a href="#soins" class="hands-logo">
+				<a href="#" class="hands-logo">
 					<img src="../../public/images/hands.png" alt="Mains" />
 				</a>
 			</div>

@@ -17,6 +17,7 @@
 					accompagne sur la voie du bien-être et de l'auto-guérison, ce chemin
 					si précieux et unique qui mène vers vous-mêmes !
 				</p>
+				<router-link to="/avis" class="btn">Voir les témoignages</router-link>
 				<div class="img-wrapper">
 					<div class="img">
 						<img
@@ -38,7 +39,7 @@ export default {
 
 <style lang="scss" scoped>
 .soins {
-	margin: 200px 0 200px 0;
+	margin: 0px 0 200px 0;
 	padding-top: 20%;
 	.text-wrapper {
 		background-color: $color-005;
@@ -89,6 +90,16 @@ export default {
 				left: 70.5%;
 				bottom: -30%;
 				width: 1024px;
+			}
+		}
+		a {
+			margin: 50px auto 0 auto;
+			width: fit-content;
+			width: -moz-fit-content;
+			display: block;
+			z-index: 2;
+			@include min($lg) {
+				margin: 50px 0 0 auto;
 			}
 		}
 		.img {

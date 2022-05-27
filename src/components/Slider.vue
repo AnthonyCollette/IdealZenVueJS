@@ -1,12 +1,15 @@
 <template>
-	<vueper-slides fixed-height="true" :dragging-distance="40">
-		<vueper-slide
-			v-for="(slide, i) in slides"
-			:key="i"
-			:content="slide.content"
-			:title="slide.title"
-		/>
-	</vueper-slides>
+	<div class="slider-section">
+		<h1>Témoignages</h1>
+		<vueper-slides fixed-height="true" :dragging-distance="40">
+			<vueper-slide
+				v-for="(slide, i) in slides"
+				:key="i"
+				:content="slide.content"
+				:title="slide.title"
+			/>
+		</vueper-slides>
+	</div>
 </template>
 
 <script>
@@ -42,6 +45,15 @@ export default {
 					content: `Agréable moment, très relaxant ! Bulle de bien-être ! Thérapeute très à l'écoute, douce, passionnée. Personne qui a beaucoup d'empathie. Soin de qualité. Je recommande vivement.`,
 					title: `<i class="fas fa-user"></i> Mélanie`,
 				},
+				{
+					content:
+						'Magnifique personne, prend son temps, très professionnel et soin très efficace. Je la recommande vivement !!',
+					title: `<i class="fas fa-user"></i> Nathalie`,
+				},
+				{
+					content: `Merci pour son écoute, sa bienveillance, sa patience. J'ai rencontré Virginie dans une période de fatigue ce qui m'a permis de me rebooster et de garder le cap sur mon projet de vie. Je recommande vivement son accompagnement.`,
+					title: `<i class="fas fa-user"></i> Marie`,
+				},
 			],
 		}
 	},
@@ -49,6 +61,13 @@ export default {
 </script>
 
 <style lang="scss">
+.slider-section {
+	h1 {
+		width: fit-content;
+		width: -moz-fit-content;
+		margin: 100px auto 0;
+	}
+}
 .vueperslides {
 	margin: 0 0 100px 0;
 	&--fixed-height {
@@ -64,7 +83,7 @@ export default {
 .vueperslides__inner {
 	background-color: $color-004;
 	@include min($lg) {
-		margin: 300px 0 0;
+		margin: 100px 0 0;
 	}
 	.vueperslides__arrows,
 	.vueperslides__bullets {
